@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+:root {
+  --clr-icons: #929292;
+  --clr-text: white;
+  --clr-bg-dark: #242424;
+  --clr-bg-light: #3b3b3b;
+  --clr-accent: #ff7600;
+}
+body {
+  margin: 1rem;
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text);
+  line-height: 1.5;
+}
+.title {
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: clamp(3rem, 10vw, 10rem);
+  line-height: 1;
+}
+.location {
+  color: var(--color-icons);
+  margin: 0;
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+.nav_link {
+  color: var(--clr-text);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.nav {
+  outline: 2px solid red;
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+  color: var(--clr-accent);
+}
+
+.secondary-images {
+  display: flex;
+  gap: 0.2rem;
+}
+
+footer {
+  margin-top: 2em;
+}
+.socail-links {
+  display: flex;
+  gap: 2em;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  background: transparent;
+  color: var(--clr-text);
+  font-size: 1.25em;
+  padding: 0.5em;
+  position: relative;
+  align-self: start;
+  justify-self: start;
+}
